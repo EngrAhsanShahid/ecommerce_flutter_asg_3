@@ -4,29 +4,37 @@ class Screen3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: Colors.white,
-      //   leading: IconButton(
-      //     icon: Icon(Icons.arrow_back, color: Colors.black),
-      //     onPressed: () => Navigator.of(context).pop(),
-      //   ),
-      //   title: Text(
-      //     "Ecom App UI",
-      //     style: TextStyle(
-      //       color: Colors.black,
-      //       fontWeight: FontWeight.bold,
-      //       fontSize: 25,
-      //     ),
-      //   ),
-      //   centerTitle: true,
-      //   actions: [
-      //     Icon(
-      //       Icons.notifications,
-      //       color: Colors.black,
-      //       size: 25,
-      //     ),
-      //   ],
-      // ),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+              padding: EdgeInsets.only(
+                left: 50,
+              ),
+              child: Text(
+                "Ecom App UI",
+                style: TextStyle(
+                  color: Colors.black,
+                ),
+              ),
+            ),
+
+            Icon(
+              Icons.notifications,
+              color: Colors.black,
+              size: 24.0,
+              semanticLabel: 'Text to announce in accessibility modes',
+            ),
+            // Image.asset(
+            //   'logo.jpeg',
+            //   width: 50,
+            //   height: 50,
+            // ),
+          ],
+        ),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -121,7 +129,7 @@ class Item extends StatelessWidget {
             padding: EdgeInsets.only(left: 15, right: 15),
             child: CircleAvatar(
               radius: 25,
-              backgroundImage: AssetImage('assets/images/iphone12.jpg'),
+              backgroundImage: AssetImage('profile.jpg'),
             ),
           ),
           Container(
@@ -156,7 +164,7 @@ class Item extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
-                  '10\$',
+                  '\$10',
                 ),
               ],
             ),
@@ -177,7 +185,7 @@ class Item1 extends StatelessWidget {
             padding: EdgeInsets.only(left: 15, right: 15),
             child: CircleAvatar(
               radius: 25,
-              backgroundImage: AssetImage('assets/images/nokia20ultra.jpg'),
+              backgroundImage: AssetImage('profile.jpg'),
             ),
           ),
           Container(
@@ -212,7 +220,7 @@ class Item1 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
-                  '10\$',
+                  '\$10',
                 ),
               ],
             ),
@@ -233,7 +241,7 @@ class Item2 extends StatelessWidget {
             padding: EdgeInsets.only(left: 15, right: 15),
             child: CircleAvatar(
               radius: 25,
-              backgroundImage: AssetImage('assets/images/macbookair.jpg'),
+              backgroundImage: AssetImage('profile.jpg'),
             ),
           ),
           Container(
@@ -268,7 +276,7 @@ class Item2 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
-                  '10\$',
+                  '\$10',
                 ),
               ],
             ),
@@ -289,7 +297,7 @@ class Item3 extends StatelessWidget {
             padding: EdgeInsets.only(left: 15, right: 15),
             child: CircleAvatar(
               radius: 25,
-              backgroundImage: AssetImage('assets/images/macbookpro.jpg'),
+              backgroundImage: AssetImage('profile.jpg'),
             ),
           ),
           Container(
@@ -324,7 +332,7 @@ class Item3 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
-                  '10\$',
+                  '\$10',
                 ),
               ],
             ),
@@ -345,7 +353,7 @@ class Item4 extends StatelessWidget {
             padding: EdgeInsets.only(left: 15, right: 15),
             child: CircleAvatar(
               radius: 25,
-              backgroundImage: AssetImage('assets/images/gamingPC.jpg'),
+              backgroundImage: AssetImage('profile.jpg'),
             ),
           ),
           Container(
@@ -380,7 +388,7 @@ class Item4 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
-                  '10\$',
+                  '\$10',
                 ),
               ],
             ),
@@ -401,7 +409,7 @@ class Item5 extends StatelessWidget {
             padding: EdgeInsets.only(left: 15, right: 15),
             child: CircleAvatar(
               radius: 25,
-              backgroundImage: AssetImage('assets/images/car.png'),
+              backgroundImage: AssetImage('profile.jpg'),
             ),
           ),
           Container(

@@ -47,7 +47,19 @@ class MyApp extends StatelessWidget {
           ),
           //body: Screen1(),
           //body: Screen2(),
-          body: Screen3(),
+          //body: Screen3(),
+          body: Center(
+            child: Column(
+              children: [
+                SizedBox(height: 60),
+                Button1(),
+                SizedBox(height: 40),
+                Button2(),
+                SizedBox(height: 40),
+                Button3(),
+              ],
+            ),
+          ),
           // body: Row(
           //   children: [
           //     Container(
@@ -63,6 +75,72 @@ class MyApp extends StatelessWidget {
           //     ),
           //   ],
           // ),
+        ),
+      ),
+    );
+  }
+}
+
+class Button1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: ElevatedButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => Screen1(),
+            ),
+          );
+        },
+        child: Text('Screen1'),
+        style: ElevatedButton.styleFrom(
+          minimumSize: Size(100, 60),
+        ),
+      ),
+    );
+  }
+}
+
+class Button2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: ElevatedButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => Screen2(),
+            ),
+          );
+        },
+        child: Text('Screen2'),
+        style: ElevatedButton.styleFrom(
+          minimumSize: Size(100, 60),
+        ),
+      ),
+    );
+  }
+}
+
+class Button3 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: ElevatedButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => Screen3(),
+            ),
+          );
+        },
+        child: Text('Screen3'),
+        style: ElevatedButton.styleFrom(
+          minimumSize: Size(100, 60),
         ),
       ),
     );
